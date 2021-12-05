@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title >Matching Game</title>
+	<meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+	<div class="container">
+
+		
+			<p class="heading">Memory Card Matching Game<p>
+		
+		<section class="score-panel">
+			<ul class="stars">
+            <li id="one" style="color: red;"><i class="fa fa-star"></i></li>
+            <li id="two" style="color: yellow;"><i class="fa fa-star"></i></li>
+            <li id="three" style="color: green;"><i class="fa fa-star"></i></li>
+          </ul>
+          <p class="tti"><span id="moves">0</span>Moves</p>
+          <div id="timer">00:00</div>   
+            <button id="restartClick">
+            <i class="fa fa-repeat"></i><!-- button for restart--->
+          </button>
+		</section>
+		<ul class="deck">
+            <li class="card" tabindex="0">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" tabindex="0">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" tabindex="0">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" tabindex="0">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+    </div>
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+
+    <h1 id="modal-heading" style=" color: green; font-size: 2rem;">Congratulation You Won !</h1>
+ <div class="result-board">
+      <h1 class='board-heading' style="">Leader Board</h1>
+    <p id="result" class="result-text"></p>
+   </div>
+    <button id="play-again" tabindex ="-1" class="play-again-button" style="background-color:red; color: white;">Play again</button>
+  
+  </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
